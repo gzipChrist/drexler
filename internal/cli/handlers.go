@@ -1,9 +1,9 @@
 package cli
 
 import (
-	"cli_apps/charm_apps/create-tui-app/internal/genfile"
-	"cli_apps/charm_apps/create-tui-app/internal/style"
-	"cli_apps/charm_apps/create-tui-app/internal/tui"
+	"drexler/internal/genfile"
+	"drexler/internal/style"
+	"drexler/internal/tui"
 	"fmt"
 	"log"
 	"os"
