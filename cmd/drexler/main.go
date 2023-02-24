@@ -1,8 +1,8 @@
 package main
 
 import (
-	"cli_apps/charm_apps/create-tui-app/internal/cli"
-	"cli_apps/charm_apps/create-tui-app/internal/style"
+	"drexler/internal/cli"
+	"drexler/internal/style"
 	"flag"
 	"log"
 	"os"
