@@ -1,7 +1,7 @@
-BINARY_NAME=app
+BINARY_NAME=drexler
 
 build:
-	go build -o ${BINARY_NAME} cmd/app/main.go
+	go build -o ${BINARY_NAME} cmd/drexler/main.go
 
 deps:
 	go mod download
