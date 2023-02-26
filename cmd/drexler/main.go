@@ -1,9 +1,9 @@
 package main
 
 import (
-	"drexler/internal/cli"
-	"drexler/internal/style"
 	"flag"
+	"github.com/gzipchrist/drexler/internal/cli"
+	"github.com/gzipchrist/drexler/internal/style"
 	"log"
 	"os"
 	"time"
