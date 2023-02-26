@@ -1,4 +1,4 @@
-module drexler
+module github.com/gzipchrist/drexler
 
 go 1.17
 

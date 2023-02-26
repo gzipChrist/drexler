@@ -1,10 +1,10 @@
 package cli
 
 import (
-	"drexler/internal/genfile"
-	"drexler/internal/style"
-	"drexler/internal/tui"
 	"fmt"
+	"github.com/gzipchrist/drexler/internal/genfile"
+	"github.com/gzipchrist/drexler/internal/style"
+	"github.com/gzipchrist/drexler/internal/tui"
 	"log"
 	"os"
 	"os/exec"
@@ -95,8 +95,7 @@ func HandleInit(args []string) {
 
 	subDirs := []string{
 		fmt.Sprintf("/cmd/%s", root),
-		"/internal/tui/teaModel",
-		"/internal/tui/teaCmd",
+		"/internal/tui",
 		"/internal/services",
 		"/internal/txtart",
 		"/pkg",
@@ -113,9 +112,10 @@ func HandleInit(args []string) {
 
 	files := make(map[string]string)
 	files[fmt.Sprintf("cmd/%s/main.go", root)] = genfile.Main(root)
-	files["internal/tui/teaModel/model.go"] = genfile.Model(root)
-	files["internal/tui/teaCmd/cmd.go"] = genfile.Cmd()
-	files["internal/txtart/kb.go"] = genfile.Kb
+	files["internal/tui/cmd.go"] = genfile.Cmd()
+	files["internal/tui/model.go"] = genfile.Model(root)
+	files["internal/tui/msg.go"] = genfile.Msg()
+	files["internal/tui/view.go"] = genfile.View
 	files[".gitignore"] = genfile.Gitignore
 	files["README.md"] = genfile.ReadMe(root)
 	files["go.mod"] = genfile.Mod(root, goVersion)

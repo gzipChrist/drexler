@@ -1,6 +1,6 @@
 package genfile
 
-const Kb = `package txt
+const View = `package tui
 
 import "fmt"
 

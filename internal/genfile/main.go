@@ -8,7 +8,7 @@ func Main(s string) string {
 import (
 	tea "github.com/charmbracelet/bubbletea"
 	"log"
-	tui "%s/internal/tui/teaModel"
+	tui "%s/internal/tui"
 )
 
 func main() {
