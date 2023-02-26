@@ -97,7 +97,6 @@ func HandleInit(args []string) {
 		fmt.Sprintf("/cmd/%s", root),
 		"/internal/tui",
 		"/internal/services",
-		"/internal/txtart",
 		"/pkg",
 	}
 
