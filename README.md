@@ -22,9 +22,9 @@ drexler init [appName]
 #### Generated File Structure
 
 ```
-[myApp]/
+[appName]/
 ├─ cmd/
-│  ├─ [myApp]/
+│  ├─ [appName]/
 │  │  ├─ main.go
 ├─ internal/
 │  ├─ services/
