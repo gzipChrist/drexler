@@ -131,7 +131,7 @@ func HandleInit(args []string) {
 
 		_, err = file.WriteString(content)
 		if err != nil {
-			fmt.Printf("  %s error writing to file %w", style.X, err)
+			_ = fmt.Errorf("  %s error writing to file %w", style.X, err)
 			os.Exit(1)
 		}
 
