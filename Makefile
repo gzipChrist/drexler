@@ -5,3 +5,6 @@ build:
 
 deps:
 	go mod download
+
+tidy:
+	go mod tidy
